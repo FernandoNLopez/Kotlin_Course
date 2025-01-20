@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.learning.horoscapp.R
 import com.learning.horoscapp.databinding.FragmentHoroscopeBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HoroscopeFragment : Fragment() {
 
     private var _binding:FragmentHoroscopeBinding? = null
@@ -21,7 +23,6 @@ class HoroscopeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentHoroscopeBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
