@@ -19,7 +19,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         kotlin {
-            jvmToolchain(jdkVersion = 24)
+            jvmToolchain(jdkVersion = 34)
         }
     }
 
